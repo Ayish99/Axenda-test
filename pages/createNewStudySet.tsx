@@ -8,6 +8,7 @@ function createNewStudySet() {
   const [add, setadd] = useState({ Term: "", Definition: "" })
   const {Term, Definition } = add
 
+  
   useEffect(() => {
     showSS()
   }, [])

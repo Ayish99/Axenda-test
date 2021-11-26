@@ -8,7 +8,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@prisma/client": "^3.5.0",
     "@supabase/supabase-js": "^1.28.1",
     "@supabase/ui": "^0.36.0",
     "@types/css": "^0.0.33",
@@ -33,7 +32,6 @@
     "eslint-config-next": "12.0.4",
     "postcss": "^8.3.11",
     "postcss-preset-env": "^7.0.1",
-    "prisma": "^3.5.0",
     "style-loader": "^3.3.1",
     "tailwindcss": "^2.2.19",
     "typescript-plugin-css-modules": "^3.4.0",

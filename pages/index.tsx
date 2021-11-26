@@ -4,7 +4,7 @@ import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
 
 function index() {
-  const [Login, setLogin] = useState([])
+  //const [Login, setLogin] = useState([])
   const [name, setname] = useState({ Name: "" })
   const { Name } = name
 

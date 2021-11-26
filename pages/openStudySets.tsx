@@ -8,7 +8,7 @@ function openStudySet() {
     const [open, setopen] = useState({Term:"", Definition:""})
     const { Term, Definition } = open
 
-   
+    
   useEffect(() => {
     openSS()
   }, [])
