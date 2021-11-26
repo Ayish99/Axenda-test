@@ -9,9 +9,7 @@ function openStudySet() {
     const { Term, Definition } = open
 
     
-  useEffect(() => {
-    openSS()
-  }, [])
+  useEffect(() => {openSS()}, [])
   
     async function openSS() {
         const { data }  = await supabase

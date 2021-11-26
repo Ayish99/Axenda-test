@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { supabase } from '../Client';
 import 'tailwindcss/tailwind.css';
-import React, { MouseEvent, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function viewStudySets() {
     const [viewStudySet, setviewStudySet] = useState([])

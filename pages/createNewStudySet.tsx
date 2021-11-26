@@ -9,9 +9,7 @@ function createNewStudySet() {
   const {Term, Definition } = add
 
   
-  useEffect(() => {
-    showSS()
-  }, [])
+  useEffect(() => {showSS()}, [])
 
   async function showSS() {
 

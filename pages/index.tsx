@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { supabase } from '../Client';
 import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
@@ -23,7 +24,12 @@ function index() {
   return (
     <div className="App">
       <div className='flex justify-center'>
-        <img src="img/studyimg.jpg" alt="study" />
+        <Image
+        src="/img/studyimg.jpg"
+        alt="study"
+        width={500}
+        height={400}
+      />
       </div>
       <div>
         <h1 className={'text-cyan-600 text-6xl font-bold font-sans uppercase text-center pt-2 pb-2'}>AXENDA</h1>
