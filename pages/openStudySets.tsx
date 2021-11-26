@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { supabase } from '../Client';
 import React, { useState, useEffect } from 'react';
 
-function openStudySet() {
+function OpenStudySet() {
     const [openStudySets, setopenStudySets] = useState([])
     const [open, setopen] = useState({Term:"", Definition:""})
     const { Term, Definition } = open
@@ -45,4 +45,4 @@ function openStudySet() {
     </div>
     )
 }
-export default openStudySet;
+export default OpenStudySet;

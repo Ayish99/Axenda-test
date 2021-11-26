@@ -3,7 +3,7 @@ import { supabase } from '../Client';
 import 'tailwindcss/tailwind.css';
 import React, { useState, useEffect } from 'react';
 
-function viewStudySets() {
+function ViewStudySets() {
     const [viewStudySet, setviewStudySet] = useState([])
     const [view, setview] = useState({ Term: "", Definition: "" })
     const { Term, Definition } = view
@@ -80,4 +80,4 @@ function viewStudySets() {
     );
 }
 
-export default viewStudySets;
+export default ViewStudySets;

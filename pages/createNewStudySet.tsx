@@ -3,7 +3,7 @@ import { supabase } from '../Client';
 import 'tailwindcss/tailwind.css';
 import React, { useState, useEffect } from 'react';
 
-function createNewStudySet() {
+function CreateNewStudySet() {
   const [createStudySet, setcreateStudySet] = useState([])
   const [add, setadd] = useState({ Term: "", Definition: "" })
   const {Term, Definition } = add
@@ -83,4 +83,4 @@ function createNewStudySet() {
   )
 }
 
-export default createNewStudySet;
+export default CreateNewStudySet;

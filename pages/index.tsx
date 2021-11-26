@@ -4,7 +4,7 @@ import { supabase } from '../Client';
 import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
 
-function index() {
+function Index() {
   //const [Login, setLogin] = useState([])
   const [name, setname] = useState({ Name: "" })
   const { Name } = name
@@ -58,4 +58,4 @@ function index() {
   )
 
 }
-export default index;
+export default Index;
