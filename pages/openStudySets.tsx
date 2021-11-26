@@ -1,11 +1,12 @@
 import 'tailwindcss/tailwind.css';
 import Link from 'next/link';
 import { supabase } from '../Client';
-import React, { MouseEvent, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function openStudySet() {
     const [openStudySets, setopenStudySets] = useState([])
     const [open, setopen] = useState({Term:"", Definition:""})
+    const { Term, Definition } = open
 
    
   useEffect(() => {
@@ -15,7 +16,7 @@ function openStudySet() {
     async function openSS() {
         const { data }  = await supabase
         .from('newStudySet')
-        .select('id, Term, Definition')
+        .select()
         setopenStudySets(data)    
     }
 
@@ -34,11 +35,11 @@ function openStudySet() {
       ))
     }
     <div className='flex justify-evenly pt-8'>
-    <Link href="/viewStudySets">
+    <Link href="/viewStudySets" passHref>
     <button className=" mt-4 font-semibold rounded-full py-2 px-16 bg-cyan-500 hover:bg-cyan-600 text-white ">Back</button>
     </Link>
 
-    <Link href="/quizlet">
+    <Link href="/home" passHref>
     <button className=" mt-4 font-semibold rounded-full py-2 px-16 bg-yellow-500 hover:bg-yellow-600 text-white ">Homepage</button>
     </Link>
 

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { supabase } from '../Client';
 import 'tailwindcss/tailwind.css';
-import React, { MouseEvent, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function createNewStudySet() {
   const [createStudySet, setcreateStudySet] = useState([])
@@ -36,7 +36,7 @@ function createNewStudySet() {
                 <h1 className={'text-gray-100 text-5xl font-bold font-serif text-center pt-2 pb-2 '}> Add Your Study Sets</h1>
             </div>
 
-            <h2 className='flex justify-center text-yellow-500  text-xl text-center font-serif font-semibold pt-4 pb-12'> Add terms and definitions you want to keep save in Quizlet!</h2>
+            <h2 className='flex justify-center text-yellow-500  text-xl text-center font-serif font-semibold pt-4 pb-12'> Add terms and definitions you want to keep save in AXENDA!</h2>
 
       <div>
       
@@ -74,7 +74,7 @@ function createNewStudySet() {
           ))
         }
         <div className='flex justify-center'>
-          <Link href="/viewStudySets">
+          <Link href="/viewStudySets" passHref>
             <button className=" mt-4 font-semibold rounded-full py-2 px-16 bg-cyan-500 hover:bg-cyan-600 text-white " type="button">Save Study Set</button>
           </Link>
         </div>
